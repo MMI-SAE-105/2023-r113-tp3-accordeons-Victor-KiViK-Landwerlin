@@ -12,15 +12,15 @@
     <div class="accordeon">
       <section x-data="{ accordeon1: false }">
         <button @click=" accordeon1 = ! accordeon1">bouton 1</button>
-        <p x-show="accordeon" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, pariatur iure? Libero dignissimos incidunt minima, ipsum, veritatis excepturi ea tempore, quod deserunt aperiam sit corrupti. Consectetur laboriosam nisi deserunt iure.</p>
+        <p x-show="accordeon1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, pariatur iure? Libero dignissimos incidunt minima, ipsum, veritatis excepturi ea tempore, quod deserunt aperiam sit corrupti. Consectetur laboriosam nisi deserunt iure.</p>
       </section>
       <section x-data="{ accordeon2: false }">
         <button @click=" accordeon2 = ! accordeon2">bouton 2</button>
-        <p>Vero odio deleniti dolorem enim praesentium aliquam perspiciatis iure quo explicabo, quod recusandae, architecto repellat. Repudiandae esse atque in architecto praesentium tempora maiores eligendi. Consequuntur ullam quia enim itaque tenetur.</p>
+        <p x-show="accordeon2">Vero odio deleniti dolorem enim praesentium aliquam perspiciatis iure quo explicabo, quod recusandae, architecto repellat. Repudiandae esse atque in architecto praesentium tempora maiores eligendi. Consequuntur ullam quia enim itaque tenetur.</p>
       </section>
       <section x-data="{ accordeon3: false }">
-        <button @click=" accordeon3 = ! accordeon3">bouton 3</button>
-        <p>Molestiae, dolores nostrum beatae fugit eveniet voluptatem. Similique autem at sequi ab, reprehenderit voluptas rerum error, corporis ut perferendis ad accusantium exercitationem quaerat consectetur laborum omnis sint nesciunt doloribus provident?</p>
+        <button @click="accordeon3 = ! accordeon3">bouton 3</button>
+        <p x-show="accordeon3">Molestiae, dolores nostrum beatae fugit eveniet voluptatem. Similique autem at sequi ab, reprehenderit voluptas rerum error, corporis ut perferendis ad accusantium exercitationem quaerat consectetur laborum omnis sint nesciunt doloribus provident?</p>
       </section>
     </div>
   </body>
