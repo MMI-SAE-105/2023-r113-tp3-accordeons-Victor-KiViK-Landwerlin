@@ -4,9 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon avec x-collapse</title>
+    <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <h1>Accordéon avec <code>x-collapse</code></h1>
+    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <div class="accordeon" x-data="{open:0}">
+      <section>
+        <button @click = "open = 1">bouton 1</button>
+        <p x-show="open == 1" x-collapse >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, incidunt sequi sint iste rerum a vero quas officia officiis commodi molestiae optio, corporis cupiditate atque vel quae nulla in ullam!</p>
+      </section>
+      <section >
+        <button @click = "open = 2">bouton 2</button>
+        <p x-show="open == 2" x-collapse>Cupiditate labore quisquam suscipit maiores cum mollitia perspiciatis dolorum ratione at, debitis tempora. Velit similique harum accusamus sequi voluptatem sapiente, quae, quaerat vero repellat doloremque quam repudiandae laboriosam, corporis excepturi.</p>
+      </section>
+      <section>
+        <button @click = "open = 3">bouton 3</button>
+        <p x-show="open == 3" x-collapse>Porro quo assumenda quis adipisci corporis eum nam, saepe quaerat. Sequi, neque minima, sed autem quis quaerat excepturi delectus voluptatum quod consequuntur aspernatur libero perspiciatis eaque deserunt veritatis voluptate repudiandae!</p>
+      </section>
+    </div>
   </body>
 </html>
